@@ -1,0 +1,15 @@
+Variabel
+- Tempat menyimpan Data yang memiliki nama.
+- Variabel hanya bisa menyimpan tipe data yang sama.
+- Keyword: var [nama_variable]
+
+Tipe Data Variabel
+3 ways :
+- var [variable_name] [data_type]. After That you can initialitation use [variable_name] = [value]
+- var [variable_name] [data_type(optional)] = [value]
+- [variable_name] := [value] 
+//multiple variable
+- var (
+    [variable_name1] = [value1]
+    [variable_name2] = [value2]
+  )
