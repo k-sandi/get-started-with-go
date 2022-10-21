@@ -15,4 +15,13 @@ func main() {
 	var i = 10
 	i += 10
 	fmt.Println(i)
+
+	/* Unary Operator */
+	i++
+	fmt.Println(i)
+
+	var negative = -100
+	var positive = +100
+	fmt.Println(negative)
+	fmt.Println(positive)
 }
