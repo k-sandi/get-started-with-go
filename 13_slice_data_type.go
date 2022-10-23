@@ -41,12 +41,42 @@ func main() {
 	fmt.Println(len(slice1))
 	fmt.Println(cap(slice1))
 
-	// months[5] = "Diubah"
-	// fmt.Println(slice1)
+	months[5] = "Diubah"
+	fmt.Println(slice1)
 
-	// slice1[1] = "MayUbah"
-	// fmt.Println(months)
-
+	slice1[0] = "MayLagi"
+	fmt.Println(months)
+	
 	var slice2 = months[10:]
 	fmt.Println(slice2)
+
+	var slice3 = append(slice2, "Kurnia")
+	fmt.Println(slice3)
+	slice3[1] = "Bukan-December"
+	fmt.Println(slice3)
+
+	newSlice := make([]string, 2, 5)
+	newSlice[0] = "Kurnia"
+	newSlice[1] = "Sandi"
+
+	// fmt.Println(fmt.Sprintf("value: %d", newSlice))
+	fmt.Println(newSlice)
+	fmt.Println(len(newSlice))
+	fmt.Println(cap(newSlice))
+	// "Length: " + fmt.Println(len(newSlice))
+	// "Capacity: " + fmt.Println(cap(newSlice))
+
+	copySlice := make([]string, 1, cap(newSlice))
+	copy(copySlice, newSlice)
+	fmt.Println(copySlice)
+
+	/* 
+	Hati-hati membuat array
+	*/
+
+	iniArray := [5]int{1,2,3,4,5}
+	iniSlice := []int{1,2,3,4,5}
+
+	fmt.Println(iniArray)
+	fmt.Println(iniSlice)
 }
