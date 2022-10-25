@@ -13,7 +13,7 @@ import (
 )
 
 func person(firstName string, age int) string {
-	result := "Nama saya " + firstName + "dan Usia saya " + strconv.Itoa(age) 
+	result := "Nama saya " + firstName + " dan Usia saya " + strconv.Itoa(age) 
 	return result
 }
 
