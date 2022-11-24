@@ -38,11 +38,27 @@ func (person Person) GetName() string {
 	return person.Name
 }
 
+type Animal struct {
+	Name string
+}
+
+func (animal Animal) GetName() string {
+	return animal.Name
+}
+
 func main() {
 	var whoami Person
 	whoami.Name = "Sandi"
 
 	SayHello(whoami)
+
+	cat := Animal {
+		Name: "Molly",
+	}
+
+	//note: bisa pakek struktur data implementasi Person
+
+	SayHello(cat)
 }
 
 
